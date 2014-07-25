@@ -1,0 +1,21 @@
+<viewdata model="Warner_TODO.HomeModel" />
+
+<content:header>
+
+</content:header>
+
+<content:main>
+
+<h4>Home Page</h4>
+<pre>
+  <p>
+    ${Model.Message} <a href ="/toDoListView">Click Here</a>
+  </p>
+ 
+</pre>
+</content:main>
+
+
+<content:footer>
+
+</content:footer>

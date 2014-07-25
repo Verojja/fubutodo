@@ -1,0 +1,23 @@
+* The FubuRegistry class is Warner_TODOFubuRegistry.  Use this class to register custom policies or
+  configure FubuMVC application settings
+
+
+
+
+* StructureMap configuration is in the file Warner_TODORegistry
+* StructureMap's default 'IFoo is Foo' conventions are configured for this project
+
+The FubuMVC application is defined in the Warner_TODOApplication class.  It's unlikely that you'll
+need to customize the application bootstrapping, but Warner_TODOApplication is where that would
+happen.  You will want to refer to this class later if you use multiple forms of hosting (ASP.Net, 
+Katana, or Serenity).
+
+
+* The home page is served by HomeEndpoint.Index()
+* HomeEndpoint.Index() could be eliminated if you choose
+  to use Home.Spark as an 'actionless view'
+* Shared/Application.spark is the master layout for the application
+* Do check out the available Spark bindings in Shared/bindings.xml
+
+
+
