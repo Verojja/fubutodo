@@ -7,6 +7,6 @@ namespace Warner_TODO
 {
     public class ToDoListViewModel
     {
-        public List<TODOTask> Task { get; set; }
+        public List<TODOTask> Tasks { get; set; }
     }
 }
