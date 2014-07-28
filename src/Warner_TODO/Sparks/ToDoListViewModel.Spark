@@ -1,0 +1,33 @@
+﻿<viewdata model="Warner_TODO.ToDoListViewModel" />
+
+<!DOCTYPE html>
+<html xmlns ="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>TODO APP</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="/content/scripts/script.js"></script>
+	</head>
+
+	<body>
+		<h2>To Do List:</h2>
+		<div class ="todoBodyDiv">
+			
+			<form name="checkListForm" method="post">
+				<input type="text" name="toDoName"/>
+				<br/>
+				<input type="date" name="toDoDateTime" value="DateTime.now();"/>
+			</form>
+
+			<div id="button">Add</div>
+			<br/>
+
+			<ol class="taskList">
+				<for each="var todo in Model.Tasks">
+          <li class="item"><div class="taskbody">${todo.TaskName}:  do on:  ${todo.TaskDate}</div></li>
+				</for>
+			</ol>
+
+		</div>
+	</body>
+</html>
+

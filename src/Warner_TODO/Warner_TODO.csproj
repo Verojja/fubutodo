@@ -103,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EndPoints\TodoEndpoint.cs" />
+    <Content Include="Content\Scripts\script.js" />
     <Content Include="Global.asax" />
     <Content Include="Sparks\Home.spark" />
     <Content Include="ripple.dependencies.config" />
@@ -113,7 +114,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Css\" />
-    <Folder Include="Content\Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sparks\ToDoListViewModel.Spark" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
