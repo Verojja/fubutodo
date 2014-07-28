@@ -16,6 +16,11 @@ namespace Warner_TODO
         private static Dictionary<int, TODOTask> ToDoTasks { get; set; }
 
         #endregion
+
+
+        int somethingChanged = 234234;
+
+
     }
 
 
