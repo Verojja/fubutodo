@@ -31,6 +31,20 @@ namespace Warner_TODO.Endpoints
             return FubuContinuation.RedirectTo<TodoEndpoint>(x => x.get_toDoListView(input), "GET");
         }
 
+        public FubuContinuation post_updateToDo(ToDoInputModel input)
+        {
+            var tasks = ContrivedDBOBject.Instance.GetTasks();
+            var taskToBeUpdated = tasks.Values.ToList().Find(x => x.TaskName.Equals(input.TaskName) && x.TaskDate.Equals(input.TaskDate));
+            if (taskToBeUpdated != null)
+            {
+                taskToBeUpdated.TaskName = input.UpdateTaskName;
+                taskToBeUpdated.TaskDate = input.UpdateTaskDate;
+               ContrivedDBOBject.Instance.UpdateTask(taskToBeUpdated);
+            }
+
+            return FubuContinuation.RedirectTo<TodoEndpoint>(x => x.get_toDoListView(input), "GET");
+        }
+
         public FubuContinuation post_removeFromToDo(ToDoInputModel input)
         {
             //Potential logic check to confirm the task exists in the contrivedDB -- possible fastFail if it doesn't.

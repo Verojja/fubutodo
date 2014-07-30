@@ -103,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EndPoints\TodoEndpoint.cs" />
+    <Content Include="Content\Css\listStyle.css" />
     <Content Include="Content\Scripts\script.js" />
     <Content Include="Global.asax" />
     <Content Include="Sparks\Home.spark" />
@@ -112,9 +113,7 @@
     <Content Include="Shared\bindings.xml" />
     <Content Include="Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\Css\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Sparks\ToDoListViewModel.Spark" />
   </ItemGroup>

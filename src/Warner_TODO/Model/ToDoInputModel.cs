@@ -9,6 +9,8 @@ namespace Warner_TODO
     {
         public string TaskName { get; set; }
         public DateTime TaskDate { get; set; }
+        public string UpdateTaskName { get; set; }
+        public DateTime UpdateTaskDate { get; set; }
     }
 
 

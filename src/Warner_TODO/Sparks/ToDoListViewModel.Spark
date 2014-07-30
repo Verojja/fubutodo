@@ -1,14 +1,14 @@
 ﻿<viewdata model="Warner_TODO.ToDoListViewModel" />
 
-<!DOCTYPE html>
-<html xmlns ="http://www.w3.org/1999/xhtml">
-	<head>
-		<title>TODO APP</title>
+
+<content:head>
+		<title>TODO APP:List</title>
+    <link rel="stylesheet" type="text/css" href="/content/css/listStyle.css" media="screen" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="/content/scripts/script.js"></script>
-	</head>
+</content:head>
 
-	<body>
+<content:main>
 		<h2>To Do List:</h2>
 		<div class ="todoBodyDiv">
 			
@@ -18,7 +18,7 @@
 				<input type="date" name="toDoDateTime" value="DateTime.now();"/>
 			</form>
 
-			<div id="button">Add</div>
+			<div id="TODObutton" class="newTaskButton">Add</div>
 			<br/>
 
 			<ol class="taskList">
@@ -28,6 +28,9 @@
 			</ol>
 
 		</div>
-	</body>
-</html>
+</content:main>
+
+<content:footer>
+
+</content:footer>
 

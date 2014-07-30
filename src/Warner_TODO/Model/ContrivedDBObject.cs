@@ -26,7 +26,7 @@ namespace Warner_TODO
             {
                 if (instance == null)
                 {
-                    ToDoTasks = new Dictionary<int, TODOTask();
+                    ToDoTasks = new Dictionary<int, TODOTask>();
                     _taskIdNonce = 0;
                     instance = new ContrivedDBOBject();
                 }
@@ -75,7 +75,12 @@ namespace Warner_TODO
         
         
         #endregion
-        
+
+
+        internal int GetNewID()
+        {
+            return _taskIdNonce++;
+        }
     }
 
 

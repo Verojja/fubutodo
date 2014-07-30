@@ -1,8 +1,8 @@
 <viewdata model="Warner_TODO.HomeModel" />
 
-<content:header>
-
-</content:header>
+<content:head>
+  <title>TODO APP:Home</title>
+</content:head>
 
 <content:main>
 

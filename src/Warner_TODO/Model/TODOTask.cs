@@ -11,7 +11,7 @@ namespace Warner_TODO
 
         public TODOTask()
         {
-            this.ID = ContrivedDBObject.Instance.GetNewID();
+            this.ID = ContrivedDBOBject.Instance.GetNewID();
         }
 
 
